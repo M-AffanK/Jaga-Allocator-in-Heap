@@ -62,7 +62,7 @@ void HeapAllocator::merge_continous_segments() { // merge continuous free memory
 			}
 			delete[] unallocated;
 			unallocated = HA;
-			unallocated_size--;
+			--unallocated_size;
 		}
 	}
 }
